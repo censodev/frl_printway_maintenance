@@ -1,0 +1,8 @@
+Consul:
+  AccessorID:       42b7a35b-3415-d438-c237-267144f72776
+  SecretID:         bbc6c49d-e1f8-0a01-0aa8-9ac837c083bf
+
+DB:
+admin: admin | Pgc@@2020
+service db: pgc_service | Pgc@@2020
+gateway db: pgc_gateway | Pgc@@2020

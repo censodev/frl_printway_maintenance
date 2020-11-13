@@ -1,0 +1,27 @@
+root {
+    -fx-background-color: #ffffff;
+}
+
+#titleLabel {
+    -fx-font-size: 30px;
+}
+
+#subTitleLabel {
+    -fx-font-size: 17px;
+    -fx-text-fill: #95979B;
+    -fx-padding: 0 0 20px 0;
+}
+
+#label {
+    -fx-font-size: 15px;
+}
+
+#btn {
+    -fx-font-size: 17px;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #3285FF;
+}
+
+#spacing {
+    -fx-padding: 0 0 5px 0;
+}

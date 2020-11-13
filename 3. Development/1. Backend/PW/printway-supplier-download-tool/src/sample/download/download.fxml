@@ -1,0 +1,35 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.scene.shape.Box?>
+<GridPane fx:controller="sample.download.DownloadController"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <ImageView fitHeight="140.0" fitWidth="350.0"
+               fx:id="imageView"
+               GridPane.halignment="CENTER"
+               GridPane.rowIndex="0"/>
+    <Label text="Print file download tool for supplier" id="subTitleLabel" GridPane.rowIndex="1"
+           GridPane.halignment="CENTER"/>
+
+    <Label text="Step 1: Import order" id="label" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="txtFileDir" GridPane.columnSpan="2" GridPane.rowIndex="3"/>
+    <Button onAction="#handleSubmitButtonFile" text="Import order" maxWidth="1.7976931348623157E308" id="btn"
+            GridPane.columnSpan="2"
+            GridPane.rowIndex="4"/>
+
+    <Box id="spacing" GridPane.rowIndex="5"/>
+
+    <Label text="Step 2: Download print file" id="label" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <Button onAction="#handleDownloadImage" text="Download" GridPane.columnIndex="0" maxWidth="1.7976931348623157E308"
+            id="btn"
+            GridPane.columnSpan="2"
+            GridPane.rowIndex="7"/>
+
+    <Label fx:id="txtProgress" id="progress" text="Progress: 0/0 (0%)" GridPane.columnIndex="0" GridPane.rowIndex="8"
+           GridPane.halignment="RIGHT"/>
+
+    <stylesheets>
+        <URL value="@download.css"/>
+    </stylesheets>
+</GridPane>

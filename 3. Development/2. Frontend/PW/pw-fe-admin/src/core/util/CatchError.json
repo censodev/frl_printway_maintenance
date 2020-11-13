@@ -1,0 +1,10 @@
+{
+  "duplicated_data.site": "Duplicate data site",
+  "duplicated_data.email": "Email already exists!",
+  "invalid_data.transaction_id_exist": "Transaction ID has exist!",
+  "error.userexists": "Account has exists!",
+  "invalid_data.not_https": "Https is required!",
+  "invalid_data.max_site": "Only one site created!",
+  "invalid_data.product_type_constrain": "Error, this product type is running"
+}
+

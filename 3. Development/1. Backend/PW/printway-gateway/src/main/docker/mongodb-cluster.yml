@@ -1,0 +1,16 @@
+version: '2'
+services:
+  pgc-gateway-mongodb:
+    image: mongo:4.2.6
+    ports:
+      - '27017:27017'
+    command: mongos --configdb csvr/pgc-gateway-mongodb-config --bind_ip 0.0.0.0
+  pgc-gateway-mongodb-node:
+    build:
+      context: .
+      dockerfile: mongodb/MongoDB.Dockerfile
+    command: mongod --shardsvr --replSet rs1
+  pgc-gateway-mongodb-config:
+    image: mongo:4.2.6
+    container_name: pgc-gateway-mongodb-config
+    command: mongod --configsvr --dbpath /data/db --replSet csvr

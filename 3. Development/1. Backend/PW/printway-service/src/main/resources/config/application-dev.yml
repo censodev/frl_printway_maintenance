@@ -1,0 +1,222 @@
+# ===================================================================
+# Spring Boot configuration for the "dev" profile.
+#
+# This configuration overrides the application.yml file.
+#
+# More information on profiles: https://www.jhipster.tech/profiles/
+# More information on configuration properties: https://www.jhipster.tech/common-application-properties/
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+
+logging:
+  level:
+    ROOT: DEBUG
+    io.github.jhipster: DEBUG
+    com.goofinity.pgc_service: DEBUG
+
+spring:
+  profiles:
+    active: dev
+    include:
+      - swagger
+      # Uncomment to activate TLS for the dev profile
+      #- tls
+  devtools:
+    restart:
+      enabled: true
+      additional-exclude: static/**
+    livereload:
+      enabled: false # we use Webpack dev server + BrowserSync for livereload
+  jackson:
+    serialization:
+      indent-output: true
+  cloud:
+    consul:
+      discovery:
+        prefer-ip-address: true
+      host: localhost
+      port: 8500
+    stream:
+      bindings:
+        balanceTrackingPublisherChannel:
+          destination: balanceTracking
+          group: balance-group
+        balanceTrackingReceiverChannel:
+          destination: balanceTracking
+          group: balance-group
+        dailyStatisticPublisherChannel:
+          destination: dailyStatistic
+          group: dailyStatistic-group
+        dailyStatisticReceiverChannel:
+          destination: dailyStatistic
+          group: dailyStatistic-group
+        lineItemStatisticPublisherChannel:
+          destination: lineItemStatistic
+          group: lineItemStatisticReceiverChannel-group
+        lineItemStatisticReceiverChannel:
+          destination: lineItemStatistic
+          group: lineItemStatisticReceiverChannel-group
+        shopifyUpdatePublisherChannel:
+          destination: shopifyUpdate
+          group: shopifyUpdate-group
+        shopifyUpdateReceiverChannel:
+          destination: shopifyUpdate
+          group: shopifyUpdate-group
+        productStatisticPublisherChannel:
+          destination: productStatistic
+          group: productStatistic-group
+        productStatisticReceiverChannel:
+          destination: productStatistic
+          group: productStatistic-group
+        trackingMorePublisherChannel:
+          destination: trackingMore
+          group: trackingMore-group
+        trackingMoreReceiverChannel:
+          destination: trackingMore
+          group: trackingMore-group
+        sendEmailPublisherChannel:
+          destination: sendEmail
+          group: sendEmail-group
+        sendEmailReceiverChannel:
+          destination: sendEmail
+          group: sendEmail-group
+        supplierBalancePublisherChannel:
+          destination: supplierBalance
+          group: supplierBalance-group
+        supplierBalanceReceiverChannel:
+          destination: supplierBalance
+          group: supplierBalance-group
+        mappingProductPublisherChannel:
+          destination: mappingProduct
+          group: mappingProduct-group
+        mappingProductReceiverChannel:
+          destination: mappingProduct
+          group: mappingProduct-group
+        syncTrackingPublisherChannel:
+          destination: syncTracking
+          group: syncTracking-group
+        syncTrackingReceiverChannel:
+          destination: syncTracking
+          group: syncTracking-group
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+      database: pgc-service
+  mail:
+    host: localhost
+    port: 25
+    username:
+    password:
+  messages:
+    cache-duration: PT1S # 1 second, see the ISO 8601 standard
+  thymeleaf:
+    cache: false
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  sleuth:
+    sampler:
+      probability: 1 # report 100% of traces
+  zipkin: # Use the "zipkin" Maven profile to have the Spring Cloud Zipkin dependencies
+    base-url: http://localhost:9411
+    enabled: false
+    locator:
+      discovery:
+        enabled: true
+
+server:
+  port: 8081
+
+# ===================================================================
+# JHipster specific properties
+#
+# Full reference is available at: https://www.jhipster.tech/common-application-properties/
+# ===================================================================
+
+cloud:
+  aws:
+    region: ap-southeast-1
+    endpoint-url: https://s3.ap-southeast-1.amazonaws.com
+    access-key: AKIAJ4UJHLCFC6CKX3QQ
+    secret-key: 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
+    bucket-name: yummyprofit
+    thumb-bucket-name: yummyprofit-thumbnails
+    amazon-ses:
+      configuration-set: PGC-SERVICE
+      from: system@goofinity.com
+
+jhipster:
+  cache: # Cache configuration
+    ehcache: # Ehcache configuration
+      time-to-live-seconds: 3600 # By default objects stay 1 hour in the cache
+      max-entries: 100 # Number of objects in each cache entry
+  # CORS is disabled by default on microservices, as you should access them through a gateway.
+  # If you want to enable it, please uncomment the configuration below.
+  # cors:
+  #     allowed-origins: "*"
+  #     allowed-methods: "*"
+  #     allowed-headers: "*"
+  #     exposed-headers: "Authorization,Link,X-Total-Count"
+  #     allow-credentials: true
+  #     max-age: 1800
+  security:
+    authentication:
+      jwt:
+        # This token must be encoded using Base64 and be at least 256 bits long (you can type `openssl rand -base64 64` on your command line to generate a 512 bits one)
+        base64-secret: NjVjZjQ3OWMzMWZjM2M0YjE5NDNmODViMTFjOWZiOGEyOWUzYjFhMTlhNGViYWNlNjM5ODA4N2NiODdiNmNlN2ZhNjc1OWU5OGQ4NGM1Zjg2ZjhlMjdhMGU2ZGZmZTY3NWEwN2ZlZGU1OTU0MzRlMjkzMWQ5OGE3YWRhZTdmNTg=
+        # Token is valid 24 hours
+        token-validity-in-seconds: 86400
+        token-validity-in-seconds-for-remember-me: 2592000
+  mail: # specific JHipster mail property, for standard properties see MailProperties
+    base-url: http://127.0.0.1:8081
+  metrics:
+    logs: # Reports metrics in the logs
+      enabled: false
+      report-frequency: 60 # in seconds
+  logging:
+    use-json-format: false # By default, logs are not in Json format
+    logstash: # Forward logs to logstash over a socket, used by LoggingConfiguration
+      enabled: false
+      host: localhost
+      port: 5000
+      queue-size: 512
+  audit-events:
+    retention-period: 30 # Number of days before audit events are deleted.
+
+# ===================================================================
+# Application specific properties
+# Add your own application properties here, see the ApplicationProperties class
+# to have type-safe configuration, like in the JHipsterProperties above
+#
+# More documentation is available at:
+# https://www.jhipster.tech/common-application-properties/
+# ===================================================================
+
+application:
+  security-key: NjVjZjQ3OWMzMWZjM2M0YjE5NDNmODViMTFjOWZiOGEyOWUzYjFhMTlh
+  url: http://localhost:8080
+  shopifyAppApiKey: e5846352a282598dee578e9bbc3154f5
+  shopifyAppApiSecret: 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
+  skuJoinSymbol: "-"
+  uniqueKeyLength: 7
+  wooWebhookKey: NjVjZjQ3OWMzMWZjM2M0YjE5NDNmODViMTFjOWZiOGEyOWUzYjFhMTlh
+  cron:
+    coolingOfPayment: "0 */15 * * * *"
+    checkSendNotification: "0 0 */1 * * *"
+    checkSellerLevel: "0 0 */1 * * *"
+    resetOrderStatistic: "0 0 0,12 * * *"
+    syncMissingOrder: "0 0 0/6 * * *"
+  trackingMoreApiKey: 0285b0ee-0dfd-49c3-806c-c58de60015d7
+
+sentry:
+  enabled: true
+  dsn: https://fe40f4f6f73940a89b860267e991d27e@o305932.ingest.sentry.io/5341741
+  stacktrace-app-packages:
+    - com.goofinity.pgc_service

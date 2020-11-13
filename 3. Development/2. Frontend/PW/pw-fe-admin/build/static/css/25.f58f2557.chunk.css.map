@@ -1,0 +1,1 @@
+{"version":3,"sources":["sites.module.less"],"names":[],"mappings":"AAAA,aACE,cAAA,CACA,eACF,CAEA,aACE,cAAF","file":"25.f58f2557.chunk.css","sourcesContent":[".text {\n  font-size: 30px;\n  font-weight: bold;\n}\n\n.icon {\n  font-size: 16px;\n}\n\n@primary-color: #FF5F02;"]}

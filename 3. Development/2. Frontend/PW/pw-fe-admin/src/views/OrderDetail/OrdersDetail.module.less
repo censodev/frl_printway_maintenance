@@ -1,0 +1,108 @@
+.detail {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 20px;
+
+    h2, p {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+}
+.td {
+    padding: 2px !important;
+    span {
+        font-size: 13px !important;
+        .button {
+            padding: 0 !important;
+        }
+    }
+}
+.content {
+    h4 {
+        margin-bottom: 5px !important;
+    }
+}
+.breakCrum {
+    cursor: pointer;
+    color: #FF5F02;
+}
+.card {
+    .checkbox {
+        align-self: center;
+    }
+    display: flex;
+    padding: 20px 0;
+    border-top: 0.5px solid #EEE;
+    .cardImg {
+        margin-right: 20px;
+        align-self: center;
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 4px;
+        }
+    }
+    .cardContent {
+        flex-grow: 1;
+        .cardTitle {
+            display: flex;
+            h4 {
+                flex-grow: 1;
+                color: #111;
+            }
+        }
+        .cardDescription {
+            display: flex;
+            // justify-content: space-between;
+            .cardDescriptionRight {
+                width: 50%;
+                flex-grow: 1;
+                div {
+                    display: flex;
+                }
+            }
+            .cardDescriptionLeft {
+                width: 50%;
+                flex-grow: 1;
+                div {
+                    display: flex;
+
+                }
+            }
+        }
+    }
+}
+.card:nth-child(1) {
+    padding-top: 0;
+    border-top: none;
+}
+.title {
+    color: rgba(0, 0, 0, 0.85);
+    font-family: 'Poppins-Medium';
+    // flex-grow: 1;
+    width: 35%;
+}
+.button {
+    padding: 0;
+    height: 20px;
+}
+.timeLine {
+    display: flex;
+    justify-content: space-between;
+}
+.description {
+    display: flex;
+    justify-content: space-between;
+    span {
+        text-align: right;
+        color: rgba(0, 0, 0, 0.65);
+    }
+    p {
+        color: rgba(0, 0, 0, 0.85);
+    }
+}
+.bold {
+    color: rgba(0, 0, 0, 0.85);
+    font-family: 'Poppins-Bold';
+}

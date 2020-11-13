@@ -1,0 +1,119 @@
+@import '../node_modules/antd/es/style/themes/default.less';
+@import './var.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins-Regular', sans-serif;
+}
+
+ul,
+ol {
+  // list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+.page-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+.dot {
+  width: 10px;
+  height: 10px;
+
+  .yellow {
+    background: #ffd400;
+  }
+
+  .green {
+    color: rgba(0, 199, 50, 0.85);
+  }
+}
+
+.green {
+  color: rgba(0, 199, 50, 0.85);
+}
+
+.orange {
+  color: rgba(255, 133, 0, 0.85);
+}
+
+.blue {
+  color: #FF5F02;
+}
+
+.ant-table-thead > tr {
+  font-family: 'Poppins-Bold';
+
+}
+
+.red {
+  color: rgba(255, 0, 0, 0.85);
+}
+
+
+.ant-table-tbody > tr .ant-table-wrapper:only-child .ant-table th {
+  background: #e6f7ff;
+  border-color: rgba(0, 0, 0, 0.03);
+}
+.ant-table-tbody > tr .ant-table-wrapper:only-child .ant-table td {
+  background: #F2F2F2 !important;
+  border-bottom: none;
+}
+.ant-modal-body, .ant-alert-description {
+  img {
+    width: 100% !important;
+  }
+}
+
+
+

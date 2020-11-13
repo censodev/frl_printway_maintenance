@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="327" height="217" viewBox="0 0 327 217">
+    <defs>
+        <path id="prefix__b" d="M65 13H306V152H65z"/>
+        <path id="prefix__i" d="M73 17H312V145H73z"/>
+        <path id="prefix__k" d="M0 36H168V187H0z"/>
+        <path id="prefix__c" d="M18 51H186V202H18z"/>
+        <path id="prefix__m" d="M0 0H167.651V150.715H0z"/>
+        <filter id="prefix__e" width="105.7%" height="108.2%" x="-2.8%" y="-4.1%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="1" result="shadowSpreadOuter1"/>
+            <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.850980392 0 0 0 0 0.850980392 0 0 0 0 0.850980392 0 0 0 1 0"/>
+        </filter>
+        <filter id="prefix__h" width="103.8%" height="107%" x="-1.9%" y="-3.5%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.850980392 0 0 0 0 0.850980392 0 0 0 0 0.850980392 0 0 0 1 0"/>
+        </filter>
+        <filter id="prefix__j" width="108.9%" height="109.9%" x="-4.5%" y="-5%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="1" result="shadowSpreadOuter1"/>
+            <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.850980392 0 0 0 0 0.850980392 0 0 0 0 0.850980392 0 0 0 1 0"/>
+        </filter>
+        <filter id="prefix__n" width="108.9%" height="110%" x="-4.5%" y="-5%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="1" result="shadowSpreadOuter1"/>
+            <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.850980392 0 0 0 0 0.850980392 0 0 0 0 0.850980392 0 0 0 1 0"/>
+        </filter>
+        <mask id="prefix__d" width="264" height="184" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
+            <use xlink:href="#prefix__a"/>
+        </mask>
+        <mask id="prefix__g" width="241" height="139" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
+            <use xlink:href="#prefix__b"/>
+        </mask>
+        <mask id="prefix__l" width="168" height="151" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
+            <use xlink:href="#prefix__c"/>
+        </mask>
+        <rect id="prefix__a" width="264" height="184" x="44" y="10" rx="3.071"/>
+        <rect id="prefix__f" width="264" height="184" x="53" y="0" rx="3.071"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(5 5)">
+        <path fill="#EFEFEF" d="M155.904 184.45s-1.26 19.14-3.29 22.7C150.581 210.711 142 212 142 212h87s-8.956-1.764-11.654-4.85c-2.698-3.085-2.698-23.15-2.698-23.15h-58.744"/>
+        <use fill="#FFF" stroke="#D9D9D9" stroke-dasharray="1.024" stroke-width="1.625" mask="url(#prefix__d)" xlink:href="#prefix__a"/>
+        <use fill="#000" filter="url(#prefix__e)" xlink:href="#prefix__f"/>
+        <use fill="#FFF" xlink:href="#prefix__f"/>
+        <use fill="#EFEFEF" stroke="#D9D9D9" stroke-dasharray="1.024" stroke-width="1.625" mask="url(#prefix__g)" xlink:href="#prefix__b"/>
+        <circle cx="185.5" cy="5.5" r="1.5" fill="#01C457"/>
+        <use fill="#000" filter="url(#prefix__h)" xlink:href="#prefix__i"/>
+        <use fill="#FFF" xlink:href="#prefix__i"/>
+        <path fill="#EFEFEF" d="M98 46h50.09v28.333H98V46zm68.455 0h50.09v28.333h-50.09V46zM98 92.667h50.09V121H98V92.667zm68.455 0h50.09V121h-50.09V92.667zm68.456 0H285V121h-50.09V92.667zM98 41h21.705v1.667H98V41zm0 46.667h21.705v1.666H98v-1.666z"/>
+        <use fill="#000" filter="url(#prefix__j)" xlink:href="#prefix__k"/>
+        <use fill="#FFF" fill-opacity=".45" xlink:href="#prefix__k"/>
+        <use stroke="#D9D9D9" stroke-dasharray="1.024" stroke-width="1.625" mask="url(#prefix__l)" xlink:href="#prefix__c"/>
+        <g transform="translate(10 44)">
+            <mask id="prefix__o" fill="#fff">
+                <use xlink:href="#prefix__m"/>
+            </mask>
+            <use fill="#000" filter="url(#prefix__n)" xlink:href="#prefix__m"/>
+            <path fill="#FFF" stroke="#E9E9E9" stroke-linejoin="square" stroke-width=".813" d="M0.406 0.406H167.245V150.309H0.406z"/>
+            <path stroke="#EFEFEF" stroke-linecap="square" stroke-width=".813" d="M139.57 121.816v28.671" mask="url(#prefix__o)"/>
+            <path fill="#FDB500" d="M151.285 136.29l.053-4.377 3.127-.054 3.127-.055v8.856l-1.588-1.583-1.588-1.583-1.593 1.587-1.592 1.587.054-4.377zm-1.237-1.375v-4.295h3.176c2.665 0 3.177.047 3.177.293 0 .242-.495.303-2.83.348l-2.828.055-.1 3.864c-.073 2.842-.165 3.886-.347 3.947-.193.064-.248-.865-.248-4.212z" mask="url(#prefix__o)"/>
+            <path stroke="#EFEFEF" stroke-linecap="square" stroke-width=".813" d="M.699 121.828h166.254" mask="url(#prefix__o)"/>
+            <path fill="#FF4F38" d="M23.235 138.112c-.152.349-.369.66-.645.924-.534.512-1.236.794-1.974.794-.842 0-1.631-.364-2.175-1.003-.544.639-1.333 1.003-2.175 1.003-.738 0-1.44-.284-1.976-.8-.277-.266-.495-.578-.646-.927-.157-.363-.236-.747-.232-1.142.007-.857.394-1.656 1.062-2.194.03-.024.06-.048.088-.073.146-.125.57-.493 1.106-.96.918-.799 2.062-1.793 2.53-2.188.068-.057.154-.089.244-.089s.177.032.244.089c.34.287 1.04.896 1.782 1.542.73.633 1.483 1.29 1.924 1.665.682.54 1.076 1.35 1.08 2.217 0 .397-.08.781-.237 1.142z" mask="url(#prefix__o)" transform="matrix(1 0 0 -1 0 271.288)"/>
+            <path fill="#2C92F6" d="M53.647 136.678c-.303 0-.589-.107-.804-.3-.215-.195-.333-.452-.333-.726 0-.273.118-.53.333-.725.215-.194.5-.3.804-.3.303 0 .588.106.803.3.215.194.333.452.333.725 0 .274-.118.531-.333.725-.214.194-.5.301-.803.301zm5.03-1.03c-.002.056-.098.334-.232.624-.137.298-.369.73-.69 1.092-.42.475-.938.854-1.54 1.125-.739.335-1.603.504-2.568.504-.964 0-1.829-.17-2.568-.505-.597-.27-1.115-.647-1.54-1.124-.32-.362-.551-.795-.688-1.093-.134-.29-.229-.568-.232-.625v-.004c.003-.056.099-.335.233-.625.138-.299.369-.731.688-1.091.42-.475.939-.854 1.54-1.126.744-.335 1.607-.505 2.568-.505.961 0 1.825.17 2.567.505.6.27 1.118.65 1.54 1.125.321.36.553.793.69 1.092.134.29.23.568.233.624v.006zm-5.03-1.738c-1.066 0-1.931.782-1.931 1.742s.867 1.743 1.93 1.743c1.065 0 1.932-.782 1.932-1.743 0-.96-.866-1.742-1.931-1.742z" mask="url(#prefix__o)" transform="matrix(1 0 0 -1 0 271.288)"/>
+            <path fill="#D8D8D8" d="M26.824 133.969H38.001000000000005V136.76H26.824zM62.031 133.969H73.208V136.76H62.031z" mask="url(#prefix__o)"/>
+            <path fill="#EFEFEF" d="M10.059 8.373H157.59199999999998V92.104H10.059z" mask="url(#prefix__o)"/>
+            <path fill="#E9E9E9" d="M9.314 101.035H64.63900000000001V106.059H9.314zM9.314 109.594H149.023V112.106H9.314z" mask="url(#prefix__o)"/>
+        </g>
+    </g>
+</svg>

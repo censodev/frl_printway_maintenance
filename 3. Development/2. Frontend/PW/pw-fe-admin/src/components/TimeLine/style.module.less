@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.timeLine {
+    padding: 16px;
+    .timeLineBody {
+        position: relative;
+        .timeLineItem {
+            position: relative;
+            &:not(:last-child):before {
+                position: absolute;
+                top: 0;
+                left: -4px;
+                width: 4px;
+                height: 100%;
+                content: '';
+                background-color: #DDD;
+            }
+            &::after {
+                position: absolute;
+                content: '';
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                background-color: #FF5F02;
+                top: 0px;
+                left: -9px;
+                z-index: 9;
+            }
+            .timeLineContent {
+                padding: 0 40px 20px 40px;
+                // margin-bottom: 20px;
+                display: flex;
+                justify-content: space-between;
+                // border-bottom: 1px solid #eee;
+            }
+        }
+    }
+}
+

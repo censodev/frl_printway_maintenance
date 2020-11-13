@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.goofinity.pgc_gateway"
+    },
+    "jhipsterVersion": "6.9.0",
+    "applicationType": "gateway",
+    "baseName": "pgc-gateway",
+    "packageName": "com.goofinity.pgc_gateway",
+    "packageFolder": "com/goofinity/pgc-gateway",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "consul",
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "N2FiYWNmMWY2ZTE4M2ZkZDEzNjg5NDMxMzkzMDIwZDVjOWMyYzI4NzNmNTQ1NjdmMDc0MzM1ODZmOTlkOTNiOGE2ZDQ0MzZlZjI3YzdkMzdjMWYyZjJhNmYyYTUxMTYwYjhmN2MwZGI0MzIwOTdkM2MxNGUxMDA2YjMxNzliZjQ=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "creationTimestamp": 1590984358310,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}

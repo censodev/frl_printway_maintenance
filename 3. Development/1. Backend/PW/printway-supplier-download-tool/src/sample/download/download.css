@@ -1,0 +1,35 @@
+root {
+    -fx-background-color: #ffffff;
+    -fx-padding: 0 20px 0 20px;
+}
+
+#titleLabel {
+    -fx-font-size: 30px;
+}
+
+#subTitleLabel {
+    -fx-font-size: 17px;
+    -fx-text-fill: #95979B;
+    -fx-padding: 0 0 20px 0;
+}
+
+#label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+#btn {
+    -fx-font-size: 17px;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #3285FF;
+}
+
+#spacing {
+    -fx-padding: 0 0 5px 0;
+}
+
+#progress {
+    -fx-text-fill: #359A48;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
